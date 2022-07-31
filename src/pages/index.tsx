@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const post: Post = {
     id: "foo",
     author: "foo",
-    authorEmail: process.env.NEXT_PUBLIC_EMAIL || "",
+    authorEmail: process.env.NEXT_PUBLIC_EMAIL ?? "",
     body: "bar",
     createdAt: new Date(Date.now()),
     title: "baz",
